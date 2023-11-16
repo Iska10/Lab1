@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cmath>
+#include <math.h>
 
 using namespace std;
 
@@ -11,28 +11,32 @@ int main()
 
 	while (true)
 	{
-		cout << "Ââåäèòå çíà÷åíèå õ " << endl;
+		cout << " Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ X" << endl;
 		cin >> x ;
 	
-		if (x<=-6)
+		if (x<=-7)
 		{
-			y = 1 ;
+			y = 0;
 		}
-		else if (x>-6 && x<=-4)
+		else if (x>-7 && x<=-3)
 		{
-			y = -0.5*x-2;
+			y = x+7;
 		}
-		else if (x>-4 && x<=0)
+		else if (x>-3 && x<=-2)
 		{
-			y = sqrt(4-pow((x+2),2));
+			y = -4;
 		}
-		else if (x>0 && x<2)
+		else if (x>-2 && x<2)
 		{
-			y = -sqrt(1-pow((x-1),2));
+			y = x*x;
 		}
-		else if (x>=2)
+		else if (x>=2 && x<4)
 		{
-			y = -x+2;
+			y = -x*2+8;
+		}
+		else if (x>=4)
+		{
+			y = 0;
 		}
 		cout << " y = " << y << endl;
 	}
