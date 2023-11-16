@@ -24,7 +24,7 @@ int main()
 		}
 		else if (x>-3 && x<=-2)
 		{
-			y = -4;
+			y = 4;
 		}
 		else if (x>-2 && x<2)
 		{
